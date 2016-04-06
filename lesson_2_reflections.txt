@@ -6,7 +6,7 @@ How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
 	The staging area is a place to arrange which files you'd like to add to the
-	repository before committing them. 
+	repository before committing them.
 	It offers a confirmation step as a sanity check for which files you'd like to
 	add.
 
@@ -16,19 +16,34 @@ change?
 	By adding files to the staging area and then using git status, you can reflect
 	on the staging area as a whole to ensure that the logical grouping you've
 	chosen makes sense before committing. You can also use git diff --staged to
-	see specific changes made to each of these files. 
+	see specific changes made to each of these files.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
 	Branches would be useful for a major new experimental feature, a re-design
 	or re-architecture of an existing application, or working on two or more 
-	potential solutions to a problem in parallel. 
+	potential solutions to a problem in parallel.
 
 How do the diagrams help you visualize the branch structure?
+
+	Without the diagrams, I probably would have had a hard time grasping the
+	concept of an unreachable branch. They also made it easier to understand
+	reachability in general.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+	The changes from each branch are combined based on which was changed most
+	recently. It's represented in the diagram as such because it marks the
+	combination of one branch into another, so the branches appear to "merge"
+	visually.
+
 What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
 manually?
+
+	Pros:
+		- No input required for non-conflicting changes
+	Cons:
+		- Manual input required when there is a conflict
+		- No opportunity to sanity-check the merge when there aren't conflicts
