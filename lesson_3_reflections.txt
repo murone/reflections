@@ -14,17 +14,23 @@ use one instead of another?
 
 	Forks are clones internal to GitHub, clones are copies of a repo either that can be
 	either local or remote. Branches are different versions of a codebase within the same
-	repo that are not reachable from each other. 
+	repo that are not reachable from each other.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+	You can work to resolve merge conflicts offline and then push the result to the remote
+    branch the next time you have internet access. This also allows you to ensure the
+    changes you're working on will be compatible with the current remote master.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+	Collaborating on code without GitHub could happen in one of two ways. The first
+	option would be to send zipped copies of the repo back and forth. This would make
+	merging challenging. Second, you could use a self-hosted repo location accessible
+	by all developers, but this would still make resolving pull requests a tedious
+	task.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
