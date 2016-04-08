@@ -35,4 +35,7 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+	Any time one or more others want to continue working on Master while I re-architect
+	or make a larger, unrelated change, I would want to make a separate branch. In reality,
+	very little work should be done directly to master in a project involving multiple
+	collaborators.
